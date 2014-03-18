@@ -17,8 +17,7 @@ import com.victor.kaiser.pendergrast.auth.setup.AuthConstants;
 import com.victor.kaiser.pendergrast.auth.setup.AuthTokenJsonParser;
 
 /**
- * An AsyncTask to get the user's notes from the server
- * Should be executed with the Auth Token as the first parameter
+ * An AsyncTask to issue HTTPS requests with an Auth Token
  */
 public class AuthHttpsTask extends AsyncTask<Void, Void, Integer> {
 
@@ -31,11 +30,6 @@ public class AuthHttpsTask extends AsyncTask<Void, Void, Integer> {
 	private static final int FAILURE_BAD_AUTH_TOKEN_RESPONSE = 5;
 	private static final int FAILURE_NO_REFRESH_TOKEN = 6;
 
-	/**
-	 * The URL used to get the user's notes on the server
-	 */
-	private static final String URL_GET_NOTES = "https://glass-notes-app.appspot.com/_ah/api/endpoint/v1/notes_put";
-	
 	/**
 	 * A listener for HTTP responses once the 
 	 * AuthHttpsTask is executed
@@ -59,6 +53,11 @@ public class AuthHttpsTask extends AsyncTask<Void, Void, Integer> {
 	 */
 	private String mRequestMethod = "GET";
 	
+	/**
+	 * The URL to connect o
+	 */
+	private String mUrl = "";
+
 	/**
 	 * The JSON to send to the server
 	 */
@@ -85,8 +84,9 @@ public class AuthHttpsTask extends AsyncTask<Void, Void, Integer> {
 	 * @param json any JSON to include as parameters
 	 * @param listener a listener to get the response
 	 */
-	public AuthHttpsTask(Context context, OnResponseListener listener){
+	public AuthHttpsTask(Context context, String url,  OnResponseListener listener){
 		mRefreshToken = PreferenceManager.getDefaultSharedPreferences(context).getString(PreferenceConstants.REFRESH_TOKEN, "");
+		mUrl = url;
 		mListener = listener;
 	}
 
@@ -95,8 +95,8 @@ public class AuthHttpsTask extends AsyncTask<Void, Void, Integer> {
 	 * @param context the application context
 	 * @param listener an OnResponseListener to get the response
 	 */
-	public AuthHttpsTask(Context context, String json, OnResponseListener listener){
-		this(context, listener);
+	public AuthHttpsTask(Context context, String url, String json, OnResponseListener listener){
+		this(context, url, listener);
 		mJSON = json;
 	}
 	
@@ -107,9 +107,8 @@ public class AuthHttpsTask extends AsyncTask<Void, Void, Integer> {
 	 * @param requestMethod "GET", "PUT", "POST", etc.
 	 * @param listener an OnResponseListener to get the response
 	 */
-	public AuthHttpsTask(Context context, String json, String requestMethod, OnResponseListener listener){
-		this(context, listener);
-		mJSON = json;
+	public AuthHttpsTask(Context context, String url, String json, String requestMethod, OnResponseListener listener){
+		this(context, url, json, listener);
 		mRequestMethod = requestMethod;
 	}
 	
@@ -211,7 +210,7 @@ public class AuthHttpsTask extends AsyncTask<Void, Void, Integer> {
 		}
 
 		try {
-			URL urlObject = new URL(URL_GET_NOTES);
+			URL urlObject = new URL(mUrl);
 
 			HttpsURLConnection con = (HttpsURLConnection) urlObject.openConnection();
 
