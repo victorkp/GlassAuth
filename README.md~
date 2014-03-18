@@ -7,8 +7,6 @@ A library for making OAuth with Google easier!
 
 GlassAuth is an easy to use library designed to make authentication with a Google Account easier. Have you seen applications using QR codes to send OAuth tokens to Glass? That's not quite a good idea. GlassAuth makes use of Google's OAuth for Devices. All the user has to do is enter a code [here](http://www.google.com/device).
 
-GlassAuth takes care of making a slick sign in process (with UI and all), and makes authorized HTTPS requests in just a few lines.
-
 ## Setup ##
 It is expected that you have a project setup at the [Google Developer Console](https://console.developers.google.com/), with the Google+ API enabled and OAuth certificates generated. 
 
