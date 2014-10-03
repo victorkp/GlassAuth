@@ -15,9 +15,7 @@ It is expected that you have a project setup at the [Google Developer Console](h
 ## How to Use ##
 1. Clone the source of this application and include it as a library in your Glass project. 
 2. In the GlassAuth library, go to `src/com/victor/kaiser/pendergrast/auth/setup/AuthConstants.java` and set the `CLIENT_ID` and `CLIENT_SECRET` according to what you generated at the Google Developer Console.
-3. Declare the `AuthActivity` in your manifest like so:
-                <activity
-                    android:name="com.victork.kaiser.pendergrast.auth.AuthActivity" />
+3. Declare the `AuthActivity` in your manifest like so: `<activity android:name="com.victork.kaiser.pendergrast.auth.AuthActivity" />`
 4. In your UI, have the user sign in by starting an `AuthActivity`
 5. Later, you can confirm the user is signed in by calling `AuthHelper.isAuthenticated()`
 6. Use `AuthHttpsRequest` to  make authenticated requests. You can add JSON parameters and change the HTTP request method to whatever you need. The `OnResponseListener` you specify will be called when a response is received.
