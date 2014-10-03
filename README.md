@@ -19,7 +19,7 @@ It is expected that you have a project setup at the [Google Developer Console](h
                 <activity
                     android:name="com.victork.kaiser.pendergrast.auth.AuthActivity" />
 4. In your UI, have the user sign in by starting an `AuthActivity`
-5. Confirm the user is signed in by calling `AuthHelper.isAuthenticated()`
+5. Later, you can confirm the user is signed in by calling `AuthHelper.isAuthenticated()`
 6. Use `AuthHttpsRequest` to  make authenticated requests. You can add JSON parameters and change the HTTP request method to whatever you need. The `OnResponseListener` you specify will be called when a response is received.
                 AuthHttpsTask request = new AuthHttpsTask(context, url, json, "POST", listener);
                 request.execute();
