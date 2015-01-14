@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#AA000000"
+                android:centerColor="#CA000000"
+                android:endColor="#DA000000"
+                android:angle="270" />
+        </shape>
+    </item>
+</selector><!-- From: file:/home/vkaiser-pendergrast/Dropbox/GitHub/GlassAuth/library/app/src/main/res/drawable/text_gradient.xml --><!-- From: file:/home/vkaiser-pendergrast/Dropbox/GitHub/GlassAuth/library/app/build/intermediates/bundles/debug/res/drawable/text_gradient.xml -->

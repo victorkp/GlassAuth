@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/vkaiser-pendergrast/Dropbox/GitHub/GlassAuth/library/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">GlassAuth</string>
+    <string name="menu_sign_out">Sign Out</string>
+    <string name="text_all_done">All done!</string>
+    <string name="text_auth_failure">Could not connect</string>
+    <string name="text_check_internet">Make sure that you have internet access</string>
+    <string name="text_failed_to_add_note">Couldn\'t add the note</string>
+    <string name="text_failed_to_get_notes">Couldn\'t get your notes</string>
+    <string name="text_failed_to_sign_in">Couldn\'t sign in</string>
+    <string name="text_loading">Loading…</string>
+    <string name="text_saving">Saving…</string>
+    <string name="text_sign_in_info">Let\'s sign in…</string>
+    <string name="text_tap_for_options">Tap for options</string>
+    <string name="text_tap_to_begin">Tap to begin</string>
+    <string name="text_tap_to_continue">Tap to continue</string>
+    <string name="text_tap_to_finish">Tap to finish setup</string>
+    <string name="text_tap_to_try_again">Tap to try again</string>
+    <string name="text_testing">Testing settings…</string>
+    <string name="text_user_code_enter_at_url">On a computer, go to %1$s and enter the code %2$s when asked</string>
+    <string name="title_activity_auth">Sign In</string>
+</resources>

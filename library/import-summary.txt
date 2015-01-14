@@ -1,0 +1,112 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* LICENSE
+* README.md
+* README.md~
+* ic_launcher-web.png
+* library/
+* library/.idea/
+* library/.idea/.name
+* library/.idea/compiler.xml
+* library/.idea/copyright/
+* library/.idea/copyright/profiles_settings.xml
+* library/.idea/encodings.xml
+* library/.idea/misc.xml
+* library/.idea/modules.xml
+* library/.idea/scopes/
+* library/.idea/scopes/scope_settings.xml
+* library/.idea/vcs.xml
+* library/.idea/workspace.xml
+* library/app/
+* library/app/build.gradle
+* library/app/src/
+* library/app/src/main/
+* library/app/src/main/AndroidManifest.xml
+* library/app/src/main/java/
+* library/app/src/main/java/com/
+* library/app/src/main/java/com/victor/
+* library/app/src/main/java/com/victor/kaiser/
+* library/app/src/main/java/com/victor/kaiser/pendergrast/
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/AuthActivity.java
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/AuthHelper.java
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/AuthHttpsTask.java
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/preference/
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/preference/PreferenceConstants.java
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/setup/
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/setup/AuthConstants.java
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/setup/AuthTokenJsonParser.java
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/setup/DeviceCodeJsonParser.java
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/setup/GetAuthTokenTask.java
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/setup/GetDeviceCodeTask.java
+* library/app/src/main/java/com/victor/kaiser/pendergrast/auth/setup/RefreshAuthTokenTask.java
+* library/app/src/main/res/
+* library/app/src/main/res/drawable-hdpi/
+* library/app/src/main/res/drawable-hdpi/ic_launcher.png
+* library/app/src/main/res/drawable/
+* library/app/src/main/res/drawable/ic_done_150.png
+* library/app/src/main/res/drawable/ic_done_50.png
+* library/app/src/main/res/drawable/ic_no_50.png
+* library/app/src/main/res/drawable/ic_note_50.png
+* library/app/src/main/res/drawable/ic_pen_50.png
+* library/app/src/main/res/drawable/ic_warning_50.png
+* library/app/src/main/res/drawable/text_gradient.xml
+* library/app/src/main/res/layout/
+* library/app/src/main/res/layout/card_full_image.xml
+* library/app/src/main/res/values/
+* library/app/src/main/res/values/strings.xml
+* library/build.gradle
+* library/gradle/
+* library/gradle/wrapper/
+* library/gradle/wrapper/gradle-wrapper.jar
+* library/gradle/wrapper/gradle-wrapper.properties
+* library/gradlew
+* library/gradlew.bat
+* library/local.properties
+* library/settings.gradle
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
