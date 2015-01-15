@@ -22,6 +22,14 @@ It is expected that you have a project setup at the [Google Developer Console](h
                 AuthHttpsTask request = new AuthHttpsTask(context, url, json, "POST", listener);
                 request.execute();
 
+## Screenshots ##
+
+![Tap to Continue Screen](/screenshots/screen0.png)
+
+![Enter Code Screen](/screenshots/screen1.png)
+
+![Finished Screen](/screenshots/screen2.png)
+
 ## Notes ##
 The `onResponse(boolean success, String response)` method in `OnResponseListener` may not behave as you expect. `success` only indicates if the HTTPS request returned 200 "good" code. `Response` is simply the response from the server.
 
